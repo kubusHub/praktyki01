@@ -1,0 +1,24 @@
+
+lokalizacje {
+	id int pk increments
+	adres varchar
+	karta_id int > undefined.undefined
+	pracownik_id int > pracownicy.PESEL
+}
+
+pracownicy {
+	PESEL int pk increments
+	imie varchar
+	nazwisko varchar
+	nr_telefonu int null
+	mail varchar
+	pensja float
+	godziny_pracy varchar
+	posada varchar
+}
+
+Karty {
+	id int pk increments
+	waznosc datetime > undefined.undefined
+}
+
